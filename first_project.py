@@ -1,58 +1,18 @@
-# print("Hello Harry")
-# print("Hello world")
-# print("Hello world")
-# print("Hello world")
-# print("Hello world")
-# print("Hello world")
-# print("Hello world")
-# print("Hello world")
-# print("Hello world")
+def has_vowel(word):
+    vowels = "aeiouAEIOU"
+    for char in word:
+        if char in vowels:
+            return True
+    return False
 
-# f = "5"
-# print(int(f) + 1)
+def check_sentence(sentence):
+    words = sentence.split()
+    for word in words:
+        if has_vowel(word):
+            print("Stop")
+            return
+    print("Write again")
 
-# Arithmetics operators
-# num1 = 10
-# num2 = 8
-
-# print("num1 + num2 is ", num1 + num2)
-# print("num1 - num2 is ", num1 - num2)
-# print("num1 * num2 is ", num1 * num2)
-# print("num1 / num2 is ", num1 / num2)
-# print("num1 // num2 is ", num1 // num2)
-# print("num1 // num2 is ", num1 // num2)
-# print("num1 // num2 is ", num1 // num2)
-# print("num1 // num2 is ", num1 // num2)
-# print("num1 // num2 is ", num1 // num2)
-# print("num1 // num2 is ", num1 // num2)
-# print("num1 // num2 is ", num1 // num2)
-# print("num1 // num2 is ", num1 // num2)
-# print("num1 // num2 is ", num1 // num2)
-# print("num1 // num2 is ", num1 // num2)
-# print("num1 // num2 is ", num1 // num2)
-# print("num1 // num2 is ", num1 // num2)
-# print("num1 ** num2 is ", num1 ** num2)
-# print("num1 % num2 is ", num1 % num2)
-
-# a = 4
-# a += 2
-# a /= 2
-# a -= 2
-# a *= 2
-
-# print(a)
-
-# Comparision operator
-
-x = 7
-y  = 4
-
-print(x<y)
-print(y>x)
-print(x != y)
-print()
-
-{
-
-    print()
-}
+# Example usage:
+input_sentence = input("Enter a sentence: ")
+check_sentence(input_sentence)
