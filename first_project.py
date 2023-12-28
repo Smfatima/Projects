@@ -7,11 +7,14 @@ def has_vowel(word):
 
 def check_sentence(sentence):
     words = sentence.split()
+    has_vowel_flag = False
+    
     for word in words:
         if has_vowel(word):
-            print("Stop")
-            return
-    print("Write again")
+            has_vowel_flag = True
+            break
+    
+    return "Stop" if has_vowel_flag else "Write again"
 
 # Example usage:
 input_sentence = input("Enter a sentence: ")
